@@ -4,6 +4,7 @@ import {
     Text,
     StyleSheet,
 } from 'react-native';
+import CollapsibleUnorderedList from "../components/CollapsibleUnorderedList";
 
 class Breathing extends Component {
   respiratoryMOI = [{
@@ -50,6 +51,10 @@ static navigationOptions = {title: 'Breathing'};
     render() {
          return (
             <View style={styles.BreathingContainer}>
+              <CollapsibleUnorderedList sections={this.respiratoryMOI} />
+              <CollapsibleUnorderedList sections={this.distressSigns} />
+              <CollapsibleUnorderedList sections={this.interventionDistress} />
+              <CollapsibleUnorderedList sections={this.interventionArrest} />
             </View>
         );
     }

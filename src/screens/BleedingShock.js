@@ -94,7 +94,7 @@ class BleedingShock extends Component {
         <Text>Severe bleeding is always a red flag, no matter when it's discovered.</Text>
         <CollapsibleUnorderedList sections={this.bleedingSigns}/>
         <CollapsibleOrderedList sections={this.bleedingControl}/>
-        <CollapsibleUnrderedList sections={this.directPressure}/>
+        <CollapsibleUnorderedList sections={this.directPressure}/>
         <CollapsibleUnorderedList sections={this.tourniquetIndications}/>
         <CollapsibleOrderedList sections={this.tourniquetApplication}/>
         <CollapsibleUnorderedList sections={this.hypovolemicShock}/>

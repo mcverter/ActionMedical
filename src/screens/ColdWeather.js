@@ -4,6 +4,7 @@ import {
     Text,
     StyleSheet,
 } from 'react-native';
+import CollapsibleUnorderedList from "../components/CollapsibleUnorderedList";
 
 class ColdWeather  extends Component {
   static navigationOptions = {title: 'Cold Weather'};
@@ -13,8 +14,7 @@ class ColdWeather  extends Component {
           ' Hypothermia -body-heat loss that threatens organ failure',
           'Frostnip -minor tissue damage due to cold',
           'Frostbite (rare) -severe tissue damage, usually to extremities',
-          '',
-      ]
+                ]
   }]
   hypothermiaSigns = [{
       title: 'Signs/Symptoms of hypothermia',
@@ -68,8 +68,7 @@ frostnipTreatment = [{
   frostbiteTreatment = [{
       title: 'Treatment for frostbite',
       content: [
-          '',
-          '1. Get the patient somewhere warm...',
+                    '1. Get the patient somewhere warm...',
           '2. but do not warm and then allow refreezing.',
           '3. Do not actively warm the site.',
           'D Activate emergency response or rush to emergency department; minutes count because tissue is at stake.',
@@ -89,6 +88,15 @@ frostnipTreatment = [{
   render() {
          return (
             <View style={styles.Container}>
+              <CollapsibleUnorderedList sections={this.ailments} />
+              <CollapsibleUnorderedList sections={this.hypothermiaSigns} />
+              <CollapsibleUnorderedList sections={this.hypothermiaTreatment} />
+              <CollapsibleUnorderedList sections={this.frostnipSigns} />
+              <CollapsibleUnorderedList sections={this.frostnipTreatment} />
+              <CollapsibleUnorderedList sections={this.frostbiteSigns} />
+              <CollapsibleUnorderedList sections={this.frostbiteTreatment} />
+              <CollapsibleUnorderedList sections={this.prevention} />
+
             </View>
         );
     }

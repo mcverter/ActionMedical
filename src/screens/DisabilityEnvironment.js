@@ -4,6 +4,7 @@ import {
     Text,
     StyleSheet,
 } from 'react-native';
+import CollapsibleUnorderedList from "../components/CollapsibleUnorderedList";
 
 class DisabilityEnvironment extends Component {
   disability = [{
@@ -22,8 +23,7 @@ class DisabilityEnvironment extends Component {
           '0  Perform an eye flush (taught later).',
           'Note on lost glasses: Take their arm, guide them out.',
           'Only intervene if the life-threatening danger is not a danger to you.',
-          '',
-      ]
+                ]
   }]
   environment = [{
       title: 'Environment',
@@ -39,6 +39,8 @@ static navigationOptions = {title: 'Disability & Environment'};
     render() {
          return (
             <View style={styles.DisabilityEnvironmentContainer}>
+              <CollapsibleUnorderedList sections={this.disability} />
+              <CollapsibleUnorderedList sections={this.disabilityInterventions} />
             </View>
         );
     }

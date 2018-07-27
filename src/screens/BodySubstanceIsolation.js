@@ -4,6 +4,7 @@ import {
     Text,
     StyleSheet,
 } from 'react-native';
+import CollapsibleUnorderedList from "../components/CollapsibleUnorderedList";
 
 class BodySubstanceIsolation extends Component {
 static navigationOptions = {title: 'Body Substance Isolation'};
@@ -39,7 +40,7 @@ gloveRules = [{
         '0  Each offers advantages',
     ]
 }];
-listName = [{
+gearOther = [{
     title: 'Other personal protective gear',
     content: [
         'goggles (chemicals, projectiles, and body substances)',
@@ -50,6 +51,10 @@ listName = [{
          return (
             <View style={styles.BodySubstanceIsolationContainer}>
               <Text>Removing exam gloves</Text>
+              <CollapsibleUnorderedList sections={this.bsiIntro} />
+              <CollapsibleUnorderedList sections={this.substances} />
+              <CollapsibleUnorderedList sections={this.gloveRules} />
+              <CollapsibleUnorderedList sections={this.gearOther} />
             </View>
         );
     }

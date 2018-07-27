@@ -5,6 +5,7 @@ import {
     StyleSheet,
   FlatList
 } from 'react-native';
+import CollapsibleUnorderedList from "../components/CollapsibleUnorderedList";
 import LinkButton from '../components/LinkButton'
 
 contents = [

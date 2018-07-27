@@ -4,6 +4,7 @@ import {
     Text,
     StyleSheet,
 } from 'react-native';
+import CollapsibleUnorderedList from "../components/CollapsibleUnorderedList";
 
 class Consent extends Component {
 static navigationOptions = {title: 'Consent'};
@@ -13,8 +14,7 @@ consentHow = [{
         'Approach calmly and cautiously.',
         'Introduce yourself confidently and swiftly, e.g.',
         'Example: "Hello, my name is Inigo Montoya and I know first aid. I can help you. Would that be okay?"',
-        '',
-    ]
+            ]
 }]
   refusingConsent = [{
       title: 'Common reasons for refusing care',
@@ -27,8 +27,7 @@ consentHow = [{
           'doubts injury is "that bad"',
           'someone else must be worse -help them',
           'fear of contagion (you or them)',
-          '',
-      ]
+                ]
   }]
   consentWhat = [{
       title: 'What\'s a street medic to do?',
@@ -40,13 +39,15 @@ consentHow = [{
           '0  Establish privacy barriers.',
           'Innovate!',
           'Always take ""No" for an answer.',
-          '',
-      ]
+                ]
   }]
     render() {
          return (
             <View style={styles.ConsentContainer}>
               <Text>Street medics get consent for everything.</Text>
+              <CollapsibleUnorderedList sections={this.consentHow} />
+              <CollapsibleUnorderedList sections={this.refusingConsent} />
+              <CollapsibleUnorderedList sections={this.consentWhat} />
             </View>
         );
     }

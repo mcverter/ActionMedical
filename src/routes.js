@@ -19,7 +19,6 @@ import ColdWeather from './screens/ColdWeather';
 import InitialAssessment from './screens/InitialAssessment';
 import StreetMedicOrganizing from './screens/StreetMedicOrganizing';
 import Consent from './screens/Consent';
-import LifeThreats from './screens/LifeThreats';
 import TableOfContents from './screens/TableOfContents';
 import CSpine from './screens/CSpine';
 import MechanismOfInjuty from './screens/MechanismOfInjury';
@@ -49,7 +48,6 @@ export default createStackNavigator({
   InitialAssessment: InitialAssessment,
   StreetMedicOrganizing: StreetMedicOrganizing,
   Consent: Consent,
-  LifeThreats: LifeThreats,
   TableOfContents: TableOfContents,
   CSpine: CSpine,
   MechanismOfInjuty: MechanismOfInjuty,

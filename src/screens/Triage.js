@@ -5,34 +5,36 @@ import {
   StyleSheet,
   ScrollView
 } from 'react-native';
+import CollapsibleUnorderedList from "../components/CollapsibleUnorderedList";
 
 class Triage extends Component {
+  purpose = [{
+      title: 'Purpose of triage',
+      content: [
+          ' Prioritization of care when patients outnumber available medics.',
+          'Quickly perform initial assessment on all patients.',
+          'Organize medic resources, prioritizing the most critical cases.',
+                ]
+  }]
+  performing = [{
+      title: 'Performing Triage',
+      content: [
+          'Triage should be performed by the highest trained/most capable medic on scene.',
+          '1. Have anyone who can walk on their own and is not actively providing care move to a "green" area.',
+          '2. Perform rapid ABCDE assessment on all remaining patients.',
+          '3. Assign available medics to perform life-saving interventions in critical cases as you go.',
+          '4. After checking all patients, assign medical resources according to severity.',
+      ]
+  }]
   static navigationOptions = {title: 'Triage'};
   render() {
     return (
-      <View >
-        <Text >Triage</Text>
-        <Text >
+      <View>
+        <Text>
           Prioritization of care when patients outnumber available medics.</Text>
-        <Text >Purpose of triage</Text>
-        <Text >
-          Quickly perform initial assessment on all patients.{"\n"}
-          Organize medic resources, prioritizing the most critical cases.{"\n"}
-          Triage should be performed by the highest trained/most capable medic on scene.</Text>
-        <ScrollView >
-          {[
-            'Have anyone who can walk on their own and is not actively providing care move to a "green" area.',
-            'Perform rapid ABCDE assessment on all remaining patients.',
-            'Assign available medics to perform life-saving interventions in critical cases as you go.',
-            'After checking all patients, assign medical resources according to severity.'
-          ].map((item, index)=>(
-            <View >
-              <Text >
-                {`${index}. ${item}`} </Text>
-            </View>
-          ))}
-          ))
-        </ScrollView>
+        <CollapsibleUnorderedList sections={this.purpose} />
+        <CollapsibleUnorderedList sections={this.performing} />
+
       </View>
     );
   }

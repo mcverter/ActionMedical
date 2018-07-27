@@ -4,6 +4,7 @@ import {
     Text,
     StyleSheet,
 } from 'react-native';
+import CollapsibleUnorderedList from "../components/CollapsibleUnorderedList";
 
 class Circulation extends Component {
   pulse = [{
@@ -46,7 +47,7 @@ class Circulation extends Component {
           'Confusion, changing consciousness',
       ]
   }]
-  intervensionBloodLoss = [{
+  interventionBloodLoss = [{
       title: 'Intervention: Severe blood loss (shock)',
       content: [
           'Call 911 !',
@@ -60,6 +61,11 @@ static navigationOptions = {title: 'Circulation'};
     render() {
          return (
             <View style={styles.Container}>
+              <CollapsibleUnorderedList sections={this.pulse} />
+              <CollapsibleUnorderedList sections={this.bleeding} />
+              <CollapsibleUnorderedList sections={this.interventionBleedingControl} />
+              <CollapsibleUnorderedList sections={this.hypoSigns} />
+              <CollapsibleUnorderedList sections={this.interventionBloodLoss} />
             </View>
         );
     }

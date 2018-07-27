@@ -4,6 +4,7 @@ import {
     Text,
     StyleSheet,
 } from 'react-native';
+import CollapsibleUnorderedList from "../components/CollapsibleUnorderedList";
 
 class CSpine extends Component {
 cspineMOI = [{
@@ -14,8 +15,7 @@ cspineMOI = [{
         'motor vehicle to pedestrian',
         'direct trauma to the neck D',
         'If you suspect a C-spine injury, you must immediately initiate C-spine stabilization.',
-        '',
-    ]
+            ]
 }]
   cspineIntervention = [{
       title: 'Intervention: C-spine stabilization',
@@ -24,8 +24,7 @@ cspineMOI = [{
           'Approach from the front',
           'Tell the injured person to keep their head still. D',
           'More important than keeping the patient still is keeping the neck stable and in line.',
-          '',
-      ]
+                ]
   }]
   cspineStabilization = [{
       title: 'Intervention: C-spine Stabilization',
@@ -34,12 +33,10 @@ cspineMOI = [{
           '0 STOP! if:',
           'the patient feels pain',
           'there is grinding ("crepitus")',
-          '',
-          '14',
+                    '14',
           'Firmly hold both sides of the patient\'s head.',
           'Someone must hold this position until advanced help arrives.',
-          '',
-      ]
+                ]
   }]
   static navigationOptions = {title: 'Cervical spinal injuries'};
 
@@ -47,6 +44,10 @@ cspineMOI = [{
          return (
             <View style={styles.Container}>
                 <Text>Injuries to the vertebrae in the neck can cause paralysis, including fatal paralysis.</Text>
+              <CollapsibleUnorderedList sections={this.cspineMOI} />
+              <CollapsibleUnorderedList sections={this.cspineIntervention} />
+              <CollapsibleUnorderedList sections={this.cspineStabilization} />
+
             </View>
         );
     }

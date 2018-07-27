@@ -4,6 +4,7 @@ import {
     Text,
     StyleSheet,
 } from 'react-native';
+import CollapsibleUnorderedList from "../components/CollapsibleUnorderedList";
 
 class Diabetic extends Component {
 static navigationOptions = {title: 'Diabetic Emergencies'};
@@ -18,8 +19,7 @@ diabeticSigns = [{
         'pale I sweaty I clammy skin',
         'may seem and even smell intoxicated',
         'sudden loss of consciousness',
-        '',
-    ]
+            ]
 }]
   diabeticTreatment = [{
       title: 'Treatment',
@@ -34,6 +34,8 @@ diabeticSigns = [{
          return (
             <View style={styles.Container}>
 <Text>Complications of diabetes occur in conditions of high and low blood sugar.</Text>
+              <CollapsibleUnorderedList sections={this.diabeticSigns} />
+              <CollapsibleUnorderedList sections={this.diabeticTreatment} />
             </View>
         );
     }

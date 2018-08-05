@@ -7,7 +7,7 @@ import {
   TouchableOpacity
 } from 'react-native';
 
-const AudioBlock = () => {
+const PageBreakBlock = () => {
   return (
     <View style={styles.allComponentContainer}>
     </View>
@@ -19,4 +19,4 @@ const styles = StyleSheet.create({
   allComponentContainer: {display: 'flex'},
 });
 
-export default AudioBlock;
+export default PageBreakBlock;

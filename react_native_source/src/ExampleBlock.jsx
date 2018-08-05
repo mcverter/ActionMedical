@@ -10,6 +10,14 @@ import {
 const ExampleBlock = () => {
   return (
     <View style={styles.allComponentContainer}>
+      {/*
+      %div{:id=>@id, :class=>['exampleblock', role, ('slide' if option? :step)]}
+  - if title?
+    .title=captioned_title
+  .content
+    =content.chomp
+
+      */}
     </View>
   );
 };

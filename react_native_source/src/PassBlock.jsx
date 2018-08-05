@@ -10,6 +10,9 @@ import {
 const PassBlock = () => {
   return (
     <View style={styles.allComponentContainer}>
+      {/*
+      =content
+      */}
     </View>
   );
 };

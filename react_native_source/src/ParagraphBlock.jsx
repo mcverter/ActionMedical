@@ -10,6 +10,12 @@ import {
 const ParagraphBlock = () => {
   return (
     <View style={styles.allComponentContainer}>
+      {/*
+      %div{:id=>@id, :class=>['paragraph', role, ('slide' if option? :step)]}
+  - if title?
+    .title=title
+  %p{:class=>(attr :position)}><=content
+*/}
     </View>
   );
 };

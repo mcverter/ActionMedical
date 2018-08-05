@@ -10,6 +10,14 @@ import {
 const OpenBlock = () => {
   return (
     <View style={styles.allComponentContainer}>
+      {/*
+      %div{:id=>@id, :class=>['openblock', (@style != 'open' ? @style : nil), role, ('slide' if option? :step)]}
+  - if title?
+    .title=title
+  .content
+    =content.chomp
+*/}
+
     </View>
   );
 };

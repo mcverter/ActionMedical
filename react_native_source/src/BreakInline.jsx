@@ -10,6 +10,10 @@ import {
 const BreakInline = () => {
   return (
     <View style={styles.allComponentContainer}>
+      {/*
+      =@text
+%br>
+*/}
     </View>
   );
 };

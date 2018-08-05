@@ -10,6 +10,9 @@ import {
 const Thematic_breakBlock = () => {
   return (
     <View style={styles.allComponentContainer}>
+      {/*
+      %hr
+      */}
     </View>
   );
 };

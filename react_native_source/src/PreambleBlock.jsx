@@ -10,6 +10,11 @@ import {
 const PreambleBlock = () => {
   return (
     <View style={styles.allComponentContainer}>
+      /*
+      #preamble
+  .sectionbody
+    =content.chomp
+       */
     </View>
   );
 };

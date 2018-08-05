@@ -10,6 +10,20 @@ import {
 const QuoteBlock = () => {
   return (
     <View style={styles.allComponentContainer}>
+      {/*
+      %div{:id=>@id, :class=>['quoteblock', role, ('slide' if option? :step)]}
+  - if title?
+    .title=title
+  %blockquote
+    =content.chomp
+    - if attr? :attribution
+      .attribution
+        %cite<
+          - if attr? :citetitle
+            =%(#{attr :attribution}, #{attr :citetitle})
+          - else
+            =attr :attribution
+*/}
     </View>
   );
 };

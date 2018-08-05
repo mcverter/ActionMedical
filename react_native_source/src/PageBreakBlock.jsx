@@ -10,6 +10,9 @@ import {
 const PageBreakBlock = () => {
   return (
     <View style={styles.allComponentContainer}>
+      {/*
+      %div(style='page-break-after: always')
+      */}
     </View>
   );
 };

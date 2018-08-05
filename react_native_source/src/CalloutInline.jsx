@@ -10,6 +10,17 @@ import {
 const CalloutInline = () => {
   return (
     <View style={styles.allComponentContainer}>
+      {/*
+      - if @document.attr? :icons, 'font'
+  %i.conum{:data=>{:value=>@text}}>
+  %b="(#{@text})"
+- elsif @document.attr? :icons
+  %img{:src=>icon_uri("callouts/#{@text}"), :alt=>@text}
+- else
+  %b.conum="(#{@text})"
+
+      */}
+
     </View>
   );
 };

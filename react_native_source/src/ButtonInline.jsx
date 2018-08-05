@@ -10,6 +10,10 @@ import {
 const ButtonInline = () => {
   return (
     <View style={styles.allComponentContainer}>
+      {/*
+      %b.button=@text
+*/}
+
     </View>
   );
 };

@@ -10,6 +10,14 @@ import {
 const SidebarBlock = () => {
   return (
     <View style={styles.allComponentContainer}>
+      {/*
+      %div{:id=>@id, :class=>['sidebarblock', role]}
+  .content
+    - if title?
+      .title=title
+    =content.chomp
+*/}
+
     </View>
   );
 };

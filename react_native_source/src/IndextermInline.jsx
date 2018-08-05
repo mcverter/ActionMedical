@@ -10,6 +10,10 @@ import {
 const IndextermInline = () => {
   return (
     <View style={styles.allComponentContainer}>
+      {/*
+      - if @type == :visible
+  =@text
+  */}
     </View>
   );
 };

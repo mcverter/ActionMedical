@@ -1,16 +1,26 @@
 import React from 'react';
 import {
-  View,
-  Image,
-  StyleSheet,
-  Button,
-  TouchableOpacity
+    View,
+    Image,
+    StyleSheet,
+    Button,
+    TouchableOpacity
 } from 'react-native';
 
-const AdmonitionBlock = () => {
-  return (
-    <View style={styles.allComponentContainer}>
-      {/*
+const AdmonitionBlock = (props) => {
+    const role = 'mini';
+    const name = 'warning';
+    return (
+        <View style={[styles.allComponentContainer]}>
+            <View style={[styles.admonitionblock, styles[name], styles[role]]} >
+                <View style={styles.admonitionIcon}>
+                    <AdmonitionIcon />
+                </View>
+                <View>
+                    {...props.children}
+                </View>
+            </View>
+            {/*
       %div{:id=>@id, :class=>['admonitionblock', (attr :name), role]}
   %table
     %tr
@@ -26,14 +36,30 @@ const AdmonitionBlock = () => {
           .title=title
         =content.chomp
 
+
+<div className="admonitionblock warning mini">
+                                <table>
+                                    <tr>
+                                        <td className="icon">
+                                            <i className="icon-warning"></i>
+                                        </td>
+                                        <td className="content">
+                                            Being a street medic can be traumatizing.
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            
       */}
-    </View>
-  );
+        </View>
+    );
 };
 
 
 const styles = StyleSheet.create({
-  allComponentContainer: {display: 'flex'},
+    allComponentContainer: {display: 'flex'},
+    mini: {},
+    warning: {}
 });
 
 export default AdmonitionBlock;

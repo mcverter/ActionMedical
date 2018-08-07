@@ -7,7 +7,7 @@ import {
   TouchableOpacity
 } from 'react-native';
 
-const ParagraphBlock = () => {
+const ParagraphBlock = (props) => {
   return (
     <View style={styles.allComponentContainer}>
       {/*
@@ -15,6 +15,10 @@ const ParagraphBlock = () => {
   - if title?
     .title=title
   %p{:class=>(attr :position)}><=content
+
+
+          <div className="paragraph"><strong>DEMO: Modified (forearm) C-spine stabilization</strong></div>
+
 */}
     </View>
   );

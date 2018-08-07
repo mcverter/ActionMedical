@@ -7,12 +7,13 @@ import {
   TouchableOpacity
 } from 'react-native';
 
-const PassBlock = () => {
+const PassBlock = (props) => {
   return (
     <View style={styles.allComponentContainer}>
       {/*
       =content
       */}
+        {...props.children}
     </View>
   );
 };

@@ -7,7 +7,7 @@ import {
   TouchableOpacity
 } from 'react-native';
 
-const MenuInline = () => {
+const MenuInline = (props) => {
   return (
     <View style={styles.allComponentContainer}>
       {/*

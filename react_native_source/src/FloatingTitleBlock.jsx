@@ -7,7 +7,7 @@ import {
   TouchableOpacity
 } from 'react-native';
 
-const FloatingTitleBlock = () => {
+const FloatingTitleBlock = (props) => {
   return (
     <View >
       {/*

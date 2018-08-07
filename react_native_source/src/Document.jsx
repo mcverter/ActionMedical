@@ -7,7 +7,7 @@ import {
   TouchableOpacity
 } from 'react-native';
 
-const Document = () => {
+const Document = (props) => {
   return (
     <View style={styles.allComponentContainer}>
       {/*

@@ -7,16 +7,13 @@ import {
   TouchableOpacity
 } from 'react-native';
 
-const OlistBlock = () => {
+const IndexTermInline = (props) => {
   return (
     <View style={styles.allComponentContainer}>
       {/*
-      %div{:id=>@id, :class=>['literalblock', role, ('slide' if option? :step)]}
-      - if title?
-      .title=title
-      .content
-      %pre{:class=>(!(@document.attr? :prewrap) || (option? :nowrap) ? 'nowrap' : nil)}=content
-*/}
+      - if @type == :visible
+  =@text
+  */}
     </View>
   );
 };
@@ -26,4 +23,4 @@ const styles = StyleSheet.create({
   allComponentContainer: {display: 'flex'},
 });
 
-export default OlistBlock;
+export default IndexTermInline;

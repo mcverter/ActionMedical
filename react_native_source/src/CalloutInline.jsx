@@ -7,7 +7,7 @@ import {
   TouchableOpacity
 } from 'react-native';
 
-const CalloutInline = () => {
+const CalloutInline = (props) => {
   return (
     <View style={styles.allComponentContainer}>
       {/*

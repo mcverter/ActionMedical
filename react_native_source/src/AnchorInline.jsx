@@ -7,7 +7,7 @@ import {
   TouchableOpacity
 } from 'react-native';
 
-const AnchorInline = () => {
+const AnchorInline = (props) => {
   return (
     <View style={styles.allComponentContainer}>
       {/*
@@ -23,6 +23,10 @@ const AnchorInline = () => {
     =@target
 - else
   %a(href=@target){:class=>role, :target=>(attr :window)}=@text
+
+
+                <li><a href="mailto:NYCActionMedical@riseup.net">NYCActionMedical@riseup.net</a></li>
+
 */}
     </View>
   );

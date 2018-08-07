@@ -7,7 +7,7 @@ import {
   TouchableOpacity
 } from 'react-native';
 
-const VideoBlock = () => {
+const VideoBlock = (props) => {
   return (
     <View style={styles.allComponentContainer}>
       {/*
@@ -37,6 +37,13 @@ const VideoBlock = () => {
         :poster=>((attr :poster) ? media_uri(attr :poster) : nil), :autoplay=>(option? :autoplay),
         :controls=>!(option? :nocontrols), :loop=>(option? :loop)}
       Your browser does not support the video tag.
+
+
+   <div className="videoblock">
+            <video controls src="assets/images/videos/donut-bandage.mp4" width="640">
+                Your browser does not support the video tag.
+            </video>
+        </div>
 
       */}
     </View>

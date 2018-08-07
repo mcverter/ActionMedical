@@ -7,7 +7,7 @@ import {
   TouchableOpacity
 } from 'react-native';
 
-const Thematic_breakBlock = () => {
+const Thematic_breakBlock = (props) => {
   return (
     <View style={styles.allComponentContainer}>
       {/*

@@ -7,7 +7,7 @@ import {
   TouchableOpacity
 } from 'react-native';
 
-const KbdInline = () => {
+const KbdInline = (props) => {
   return (
     <View style={styles.allComponentContainer}>
       {/*

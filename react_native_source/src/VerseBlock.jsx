@@ -7,7 +7,7 @@ import {
   TouchableOpacity
 } from 'react-native';
 
-const VerseBlock = () => {
+const VerseBlock = (props) => {
   return (
     <View style={styles.allComponentContainer}>
       {/*

@@ -7,7 +7,7 @@ import {
   TouchableOpacity
 } from 'react-native';
 
-const ButtonInline = () => {
+const ButtonInline = (props) => {
   return (
     <View style={styles.allComponentContainer}>
       {/*

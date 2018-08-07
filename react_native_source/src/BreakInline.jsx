@@ -7,9 +7,10 @@ import {
   TouchableOpacity
 } from 'react-native';
 
-const BreakInline = () => {
+const BreakInline = (props) => {
   return (
     <View style={styles.allComponentContainer}>
+      <PageBreak />
       {/*
       =@text
 %br>

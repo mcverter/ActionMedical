@@ -7,7 +7,7 @@ import {
   TouchableOpacity
 } from 'react-native';
 
-const ImageInline = () => {
+const ImageInline = (props) => {
   return (
     <View style={styles.allComponentContainer}>
 

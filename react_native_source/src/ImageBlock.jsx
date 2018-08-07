@@ -7,9 +7,10 @@ import {
   TouchableOpacity
 } from 'react-native';
 
-const ImageBlock = () => {
+const ImageBlock = (props) => {
   return (
     <View style={styles.allComponentContainer}>
+      <Image />
       {/*
       %div{:id=>@id, :class=>['imageblock', @style, role, ('slide' if option? :step)],
     :style=>((css_style = [("text-align: #{attr :align}" if attr? :align),
@@ -22,6 +23,13 @@ const ImageBlock = () => {
       %img{:src=>image_uri(attr :target), :alt=>(attr :alt), :width=>(attr :width), :height=>(attr :height)}
   - if title?
     .title=captioned_title
+
+            <div className="imageblock">
+            <div className="content">
+                <img alt="seizure intervention comic" src="assets/images/seizure-intervention-comic.gif" width="800">
+            </div>
+        </div>
+
 */}
     </View>
   );

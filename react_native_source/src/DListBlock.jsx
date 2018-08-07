@@ -7,7 +7,7 @@ import {
   TouchableOpacity
 } from 'react-native';
 
-const DlistBlock = () => {
+const DListBlock = (props) => {
   return (
     <View style={styles.allComponentContainer}>
       {/*
@@ -94,4 +94,4 @@ const styles = StyleSheet.create({
   allComponentContainer: {display: 'flex'},
 });
 
-export default DlistBlock;
+export default DListBlock;

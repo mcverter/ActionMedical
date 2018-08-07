@@ -7,7 +7,7 @@ import {
   TouchableOpacity
 } from 'react-native';
 
-const SidebarBlock = () => {
+const SidebarBlock = (props) => {
   return (
     <View style={styles.allComponentContainer}>
       {/*

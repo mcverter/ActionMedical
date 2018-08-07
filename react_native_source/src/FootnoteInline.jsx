@@ -7,7 +7,7 @@ import {
   TouchableOpacity
 } from 'react-native';
 
-const FootnoteInline = () => {
+const FootnoteInline = (props) => {
   return (
     <View style={styles.allComponentContainer}>
     </View>

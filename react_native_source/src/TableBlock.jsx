@@ -7,7 +7,7 @@ import {
   TouchableOpacity
 } from 'react-native';
 
-const TableBlock = () => {
+const TableBlock = (props) => {
   return (
     <View style={styles.allComponentContainer}>
       {
@@ -60,6 +60,38 @@ const TableBlock = () => {
                     - cell_content.each do |text|
                       %p.tableblock<=text
 
+        <table className="tableblock frame-all grid-all" style="width:100%">
+            <colgroup>
+                <col style="width:25%">
+                <col style="width:75%">
+            </colgroup>
+            <tbody>
+            <tr>
+                <td className="tableblock halign-left valign-top"><p className="tableblock">Irritant</td>
+                <td className="tableblock halign-left valign-top"><p className="tableblock">oleoresin capsicum (OC)</td>
+            </tr>
+            <tr>
+                <td className="tableblock halign-left valign-top"><p className="tableblock">Delivery</td>
+                <td className="tableblock halign-left valign-top"><p className="tableblock">mainly direct spray, sometimes projectiles</td>
+            </tr>
+            <tr>
+                <td className="tableblock halign-left valign-top"><p className="tableblock">Primary effects</td>
+                <td className="tableblock halign-left valign-top"><p className="tableblock">pain, blindness, sometimes respiratory distress, mucous discharge</td>
+            </tr>
+            <tr>
+                <td className="tableblock halign-left valign-top"><p className="tableblock">Secondary effects</td>
+                <td className="tableblock halign-left valign-top"><p className="tableblock">irritation, dryness, certain sense of singular injustice</td>
+            </tr>
+            <tr>
+                <td className="tableblock halign-left valign-top"><p className="tableblock">Primary treatment</td>
+                <td className="tableblock halign-left valign-top"><p className="tableblock">water</td>
+            </tr>
+            <tr>
+                <td className="tableblock halign-left valign-top"><p className="tableblock">Secondary treatments</td>
+                <td className="tableblock halign-left valign-top"><p className="tableblock">“LAW”, air</td>
+            </tr>
+            </tbody>
+        </table>
 
          */
       }

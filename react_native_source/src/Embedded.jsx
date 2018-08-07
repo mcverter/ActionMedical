@@ -7,7 +7,7 @@ import {
   TouchableOpacity
 } from 'react-native';
 
-const Embedded = () => {
+const Embedded = (props) => {
   return (
     <View style={styles.allComponentContainer}>
       {/*

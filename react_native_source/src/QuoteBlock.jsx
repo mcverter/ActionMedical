@@ -7,7 +7,7 @@ import {
   TouchableOpacity
 } from 'react-native';
 
-const QuoteBlock = () => {
+const QuoteBlock = (props) => {
   return (
     <View style={styles.allComponentContainer}>
       {/*

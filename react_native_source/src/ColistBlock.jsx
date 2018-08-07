@@ -7,7 +7,7 @@ import {
   TouchableOpacity
 } from 'react-native';
 
-const ColistBlock = () => {
+const ColistBlock = (props) => {
   return (
     <View style={styles.allComponentContainer}>
       {/*

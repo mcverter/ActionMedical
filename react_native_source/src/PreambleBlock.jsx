@@ -7,7 +7,7 @@ import {
   TouchableOpacity
 } from 'react-native';
 
-const PreambleBlock = () => {
+const PreambleBlock = (props) => {
   return (
     <View style={styles.allComponentContainer}>
       /*

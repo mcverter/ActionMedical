@@ -14,6 +14,7 @@ const IndexTermInline = (props) => {
       - if @type == :visible
   =@text
   */}
+        {...props.children}
     </View>
   );
 };

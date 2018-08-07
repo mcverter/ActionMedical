@@ -10,7 +10,8 @@ import {
 const BreakInline = (props) => {
   return (
     <View style={styles.allComponentContainer}>
-      <PageBreak />
+        {...props.children}
+        <PageBreak />
       {/*
       =@text
 %br>

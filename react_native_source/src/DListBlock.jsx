@@ -83,6 +83,39 @@ const DListBlock = (props) => {
               %p<=dd.text
             - if dd.blocks?
               =dd.content.chomp
+
+
+              <div className="dlist">
+            <dl>
+                <dt className="hdlist1">Other personal protective gear</dt>
+                <dd>
+                    <div className="ulist">
+                        <ul>
+                            <li>goggles (chemicals, projectiles, and body substances)</li>
+                            <li>poncho (chemicals and body substances)</li>
+                        </ul>
+                    </div>
+                </dd>
+            </dl>
+        </div>
+
+
+                <div className="dlist">
+            <dl>
+                <dt className="hdlist1">Objectives</dt>
+                <dd>
+                    <div className="ulist">
+                        <ul>
+                            <li>Determine your size in exam gloves.</li>
+                            <li>Practice getting them on.</li>
+                            <li>Practice taking them off properly.</li>
+                        </ul>
+                    </div>
+                </dd>
+            </dl>
+        </div>
+
+
 */}
 
     </View>

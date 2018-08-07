@@ -37,6 +37,20 @@ const ImageInline = (props) => {
     - else
       %img{:src=>src, :alt=>(attr :alt), :width=>(attr :width), :height=>(attr :height), :title=>(attr :title)}
 
+
+        <div className="admonitionblock note mini">
+            <table>
+                <tr>
+                    <td className="icon">
+                        <i className="icon-note"></i>
+                    </td>
+                    <td className="content">
+                        There are lots of gray areas in first aid. Street medics tend not to rule conditions out. If it <em>could be</em> a red flag, it&#8217;s a red flag.
+                    </td>
+                </tr>
+            </table>
+        </div>
+
       */}
     </View>
   );

@@ -1,27 +1,29 @@
 import React from 'react';
 import {
-  View,
-  Image,
-  StyleSheet,
-  Button,
-  TouchableOpacity
+    View,
+    Image,
+    StyleSheet,
+    Button,
+    TouchableOpacity
 } from 'react-native';
 
 const IndexTermInline = (props) => {
-  return (
-    <View style={styles.allComponentContainer}>
-      {/*
-      - if @type == :visible
-  =@text
-  */}
-        {...props.children}
-    </View>
-  );
+    const visible = props.visible === false ? false : true;
+    return (
+        <View style={styles.allComponentContainer}>
+            {visibile && <View>{...props.children}</View>}
+        </View>
+    );
 };
 
 
 const styles = StyleSheet.create({
-  allComponentContainer: {display: 'flex'},
+    allComponentContainer: {display: 'flex'},
 });
 
 export default IndexTermInline;
+
+/*
+      - if @type == :visible
+  =@text
+  */

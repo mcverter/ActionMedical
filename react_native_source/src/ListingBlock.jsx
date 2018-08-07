@@ -10,7 +10,18 @@ import {
 const ListingBlock = (props) => {
   return (
     <View style={styles.allComponentContainer}>
-      {/*
+    </View>
+  );
+};
+
+
+const styles = StyleSheet.create({
+  allComponentContainer: {display: 'flex'},
+});
+
+export default ListingBlock;
+
+/*
       %div{:id=>@id, :class=>['listingblock', role, ('slide' if option? :step)]}
   - if title?
     .title=captioned_title
@@ -45,14 +56,4 @@ const ListingBlock = (props) => {
       %pre{:class=>(nowrap ? 'nowrap' : nil)}
         -# Haml automatically preserves whitespace in <pre> tags by replacing newlines with &#x000A;, but I'm not sure about the <code> tag
         %code~content
-*/}
-    </View>
-  );
-};
-
-
-const styles = StyleSheet.create({
-  allComponentContainer: {display: 'flex'},
-});
-
-export default ListingBlock;
+*/

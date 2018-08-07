@@ -12,11 +12,7 @@ const BreakInline = (props) => {
     <View style={styles.allComponentContainer}>
         {...props.children}
         <PageBreak />
-      {/*
-      =@text
-%br>
-*/}
-    </View>
+      </View>
   );
 };
 
@@ -26,3 +22,8 @@ const styles = StyleSheet.create({
 });
 
 export default BreakInline;
+
+/*
+      =@text
+%br>
+*/

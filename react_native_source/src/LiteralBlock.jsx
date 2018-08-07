@@ -10,13 +10,6 @@ import {
 const LiteralBlock = (props) => {
   return (
     <View style={styles.allComponentContainer}>
-      {/*
-      %div{:id=>@id, :class=>['literalblock', role, ('slide' if option? :step)]}
-  - if title?
-    .title=title
-  .content
-    %pre{:class=>(!(@document.attr? :prewrap) || (option? :nowrap) ? 'nowrap' : nil)}=content
-*/}
     </View>
   );
 };
@@ -27,3 +20,11 @@ const styles = StyleSheet.create({
 });
 
 export default LiteralBlock;
+
+{/*
+      %div{:id=>@id, :class=>['literalblock', role, ('slide' if option? :step)]}
+  - if title?
+    .title=title
+  .content
+    %pre{:class=>(!(@document.attr? :prewrap) || (option? :nowrap) ? 'nowrap' : nil)}=content
+*/}

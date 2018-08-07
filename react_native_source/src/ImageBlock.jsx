@@ -1,17 +1,36 @@
 import React from 'react';
 import {
-  View,
-  Image,
-  StyleSheet,
-  Button,
-  TouchableOpacity
+    View,
+    Image,
+    StyleSheet,
+    Button,
+    TouchableOpacity
 } from 'react-native';
 
 const ImageBlock = (props) => {
-  return (
-    <View style={styles.allComponentContainer}>
-      <Image />
-      {/*
+    return (
+        <View style={styles.allComponentContainer}>
+            <View style={styles.imageBlock}>
+                <View style={styles.content}>
+                    <Image
+                        alt={alt}
+                        src={src}
+                        styles={[styles.image, {width: '80%'}]}
+                    />
+                </View>
+            </View>
+        </View>
+    );
+};
+
+
+const styles = StyleSheet.create({
+    allComponentContainer: {display: 'flex'},
+});
+
+export default ImageBlock;
+
+/*
       %div{:id=>@id, :class=>['imageblock', @style, role, ('slide' if option? :step)],
     :style=>((css_style = [("text-align: #{attr :align}" if attr? :align),
                        ("float: #{attr :float}" if attr? :float)].compact * '; ').empty? ? nil : css_style)}
@@ -30,14 +49,4 @@ const ImageBlock = (props) => {
             </div>
         </div>
 
-*/}
-    </View>
-  );
-};
-
-
-const styles = StyleSheet.create({
-  allComponentContainer: {display: 'flex'},
-});
-
-export default ImageBlock;
+*/

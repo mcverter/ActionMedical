@@ -10,7 +10,19 @@ import {
 const Document = (props) => {
   return (
     <View style={styles.allComponentContainer}>
-      {/*
+
+    </View>
+  );
+};
+
+
+const styles = StyleSheet.create({
+  allComponentContainer: {display: 'flex'},
+});
+
+export default Document;
+
+/*
       - deckjs_version = (attr :deckjs_version, '1.1.0')
 - deckjsdir = (attr :deckjsdir, 'deck.js')
 !!! 5
@@ -239,14 +251,4 @@ const Document = (props) => {
       kbd kbd:first-child { margin-left: 0; }
       kbd kbd:last-child { margin-right: 0; }
 
-      */}
-    </View>
-  );
-};
-
-
-const styles = StyleSheet.create({
-  allComponentContainer: {display: 'flex'},
-});
-
-export default Document;
+      */

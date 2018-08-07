@@ -10,7 +10,18 @@ import {
 const MenuInline = (props) => {
   return (
     <View style={styles.allComponentContainer}>
-      {/*
+    </View>
+  );
+};
+
+
+const styles = StyleSheet.create({
+  allComponentContainer: {display: 'flex'},
+});
+
+export default MenuInline;
+
+{/*
       - menu = attr 'menu'
 - menuitem = attr 'menuitem'
 - if !(submenus = attr 'submenus').empty?
@@ -28,13 +39,3 @@ const MenuInline = (props) => {
   %span.menu=menu
 
       */}
-    </View>
-  );
-};
-
-
-const styles = StyleSheet.create({
-  allComponentContainer: {display: 'flex'},
-});
-
-export default MenuInline;

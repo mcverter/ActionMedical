@@ -10,6 +10,12 @@ import {
 const DListBlock = (props) => {
   return (
     <View style={styles.allComponentContainer}>
+      <View style={styles.dListContainer}>
+        <dList>
+          <dTerm style="hdlist1"/>
+          <dDefinition />
+        </dList>
+      </View>
       {/*
       - case @style
 - when 'steps'
@@ -85,7 +91,7 @@ const DListBlock = (props) => {
               =dd.content.chomp
 
 
-              <div className="dlist">
+       <div className="dlist">
             <dl>
                 <dt className="hdlist1">Other personal protective gear</dt>
                 <dd>

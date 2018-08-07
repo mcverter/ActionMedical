@@ -10,15 +10,7 @@ import {
 const ExampleBlock = (props) => {
   return (
     <View style={styles.allComponentContainer}>
-      {/*
-      %div{:id=>@id, :class=>['exampleblock', role, ('slide' if option? :step)]}
-  - if title?
-    .title=captioned_title
-  .content
-    =content.chomp
-
-      */}
-    </View>
+      </View>
   );
 };
 
@@ -28,3 +20,12 @@ const styles = StyleSheet.create({
 });
 
 export default ExampleBlock;
+
+/*
+      %div{:id=>@id, :class=>['exampleblock', role, ('slide' if option? :step)]}
+  - if title?
+    .title=captioned_title
+  .content
+    =content.chomp
+
+      */

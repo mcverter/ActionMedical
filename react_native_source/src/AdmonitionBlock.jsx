@@ -8,8 +8,8 @@ import {
 } from 'react-native';
 
 const AdmonitionBlock = (props) => {
-    const role = 'mini';
-    const name = 'warning';
+    const role = props.role || 'mini';
+    const name = props.name || 'warning';
     return (
         <View style={[styles.allComponentContainer]}>
             <View style={[styles.admonitionblock, styles[name], styles[role]]} >
@@ -20,7 +20,22 @@ const AdmonitionBlock = (props) => {
                     {...props.children}
                 </View>
             </View>
-            {/*
+        </View>
+    );
+};
+
+
+const styles = StyleSheet.create({
+    allComponentContainer: {display: 'flex'},
+    mini: {},
+    warning: {}
+});
+
+export default AdmonitionBlock;
+
+
+
+/*
       %div{:id=>@id, :class=>['admonitionblock', (attr :name), role]}
   %table
     %tr
@@ -49,17 +64,5 @@ const AdmonitionBlock = (props) => {
                                     </tr>
                                 </table>
                             </div>
-                            
-      */}
-        </View>
-    );
-};
 
-
-const styles = StyleSheet.create({
-    allComponentContainer: {display: 'flex'},
-    mini: {},
-    warning: {}
-});
-
-export default AdmonitionBlock;
+      */

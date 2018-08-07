@@ -8,9 +8,23 @@ import {
 } from 'react-native';
 
 const AnchorInline = (props) => {
+  const url = props.url;
+
   return (
     <View style={styles.allComponentContainer}>
-      {/*
+        <Link to={url}> {url} </Link>
+    </View>
+  );
+};
+
+
+const styles = StyleSheet.create({
+  allComponentContainer: {display: 'flex'},
+});
+
+export default AnchorInline;
+
+/*
       - case @type
 - when :xref
   - refid = (attr :refid) || @target
@@ -27,14 +41,4 @@ const AnchorInline = (props) => {
 
                 <li><a href="mailto:NYCActionMedical@riseup.net">NYCActionMedical@riseup.net</a></li>
 
-*/}
-    </View>
-  );
-};
-
-
-const styles = StyleSheet.create({
-  allComponentContainer: {display: 'flex'},
-});
-
-export default AnchorInline;
+*/
